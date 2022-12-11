@@ -26,7 +26,7 @@ const Work = () => {
             <div
               key={index}
               style={{ backgroundImage: `url(${item.image})` }}
-              className="shadow-lg shadow-[#040c16] group container 
+              className="shadow-lg shadow-stone-900 group container 
               flex justify-center text-center items-center mx-auto content-div "
             >
               {/* Hover effect for images */}
@@ -38,7 +38,7 @@ const Work = () => {
                   {/* eslint-disable-next-line */}
                   <a href={item.github} target="_blank">
                     <button
-                      className="text-center px-4 py-3 m-2
+                      className="text-center px-4 py-2 m-2
                        bg-white text-gray-700 font-bold text-lg"
                     >
                       Code
@@ -47,7 +47,7 @@ const Work = () => {
                   {/* eslint-disable-next-line */}
                   <a href={item.live} target="_blank">
                     <button
-                      className="text-center px-4 py-3 m-2
+                      className="text-center px-4 py-2 m-2
                        bg-white text-gray-700 font-bold text-lg"
                     >
                       Live
