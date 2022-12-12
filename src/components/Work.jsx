@@ -1,5 +1,6 @@
 import React from 'react';
 import { data } from "../data/data.js";
+import Jello from 'react-reveal/Jello';
 
 
 const Work = () => {
@@ -9,17 +10,19 @@ const Work = () => {
   //setProject(data);
 
   return (
-    <div name='work' className='w-full py-12 text-gray-300 bg-primary'>
+    <div name='work' className='w-full py-12 text-gray-300 bg-primary min-h-screen flex justify-center items-center'>
       <div className='max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full'>
-        <div className='pb-8'>
-          <p className='text-4xl font-bold inline border-b-4 text-gray-300 border-secondary'>
-            Work
-          </p>
-          <p className='py-6'>// Check out some of my recent work</p>
-        </div>
+        <Jello>
+          <div className='pb-8'>
+            <p className='text-4xl font-bold inline border-b-4 text-gray-300 border-secondary'>
+              Work
+            </p>
+            <p className='py-6'>// Check out some of my recent work</p>
+          </div>
+        </Jello>
 
         {/* container for projects */}
-        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
+        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-12 md:gap-4">
 
           {/* Gird Item */}
           {project.map((item, index) => (
@@ -27,7 +30,7 @@ const Work = () => {
               key={index}
               style={{ backgroundImage: `url(${item.image})` }}
               className="shadow-lg shadow-stone-900 group container 
-              flex justify-center text-center items-center mx-auto content-div "
+              flex justify-center text-center items-center mx-auto content-div border border-secondary"
             >
               {/* Hover effect for images */}
               <div className="opacity-0 group-hover:opacity-100 ">

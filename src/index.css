@@ -15,6 +15,11 @@
     }
 }
 
+.nav-header {
+    background-color: #07000E;
+    z-index: 100;
+}
+
 .content-div {
     background-repeat: no-repeat;
     background-size: cover;
